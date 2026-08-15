@@ -19,7 +19,7 @@
 - **Database**: SQLite / MySQL
 - **Deployment**: Docker, Ngrok, Local/Cloud Hosting
 
-## 📦 Installation
+# 📦 Installation
 
 ```bash
 # Clone the repository
