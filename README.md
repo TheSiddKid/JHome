@@ -11,7 +11,7 @@
 - 🧠 Built using NLP and Rule-Based Logic
 - 🕒 Works Offline for Low-Resource Environments
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 - **Frontend**: React.js, HTML, CSS, JavaScript
 - **Backend**: Flask (or Django) for API handling
