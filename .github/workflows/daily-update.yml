@@ -1,0 +1,29 @@
+name: Daily Contribution Update
+
+on:
+  schedule:
+    - cron: "30 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Update daily contribution file
+        run: |
+          echo "Last automated update: $(date -u)" > .github/daily-update.txt
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/daily-update.txt
+          git commit -m "chore: daily contribution update" || exit 0
+          git push
