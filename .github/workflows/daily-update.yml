@@ -2,7 +2,8 @@ name: Daily README Contribution
 
 on:
   schedule:
-    - cron: "30 12 * * *"
+    - cron: "30 7 * * *"
+      timezone: "Asia/Kolkata"
   workflow_dispatch:
 
 permissions:
