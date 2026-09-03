@@ -19,13 +19,13 @@ jobs:
 
       - name: Update README
         run: |
-          TODAY=$(date -u +"%Y-%m-%d")
+          TODAY=$(TZ=Asia/Kolkata date +"%Y-%m-%d")
           sed -i "s/<!-- DAILY_UPDATE: .* -->/<!-- DAILY_UPDATE: $TODAY -->/" README.md
 
       - name: Commit README change
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "TheSiddKid"
+          git config user.email "204383960+TheSiddKid@users.noreply.github.com"
           git add README.md
           git commit -m "chore: daily README update" || exit 0
           git push
