@@ -33,4 +33,4 @@ npm install
 # Install backend dependencies
 cd ../backend
 pip install -r requirements.txt
-<!-- DAILY_UPDATE: 2026-10-05 -->
+<!-- DAILY_UPDATE: 2026-10-06 -->
